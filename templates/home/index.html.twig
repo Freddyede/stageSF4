@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    {% for pizza in pizzas %}
+        {{ pizza.name }} : {{ pizza.price }} €<br>
+    {% endfor %}
+{% endblock %}
